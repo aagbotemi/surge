@@ -78,31 +78,31 @@ const StepOne = (props) => {
 
 
             <div>
-              <p>Years Of Work Experience</p>
+              <p  style={{fontSize: "13px"}}>Years Of Work Experience</p>
               <Select options={yearsOfExperiences} name="yearsOfExperience" />
               <p className="error"><ErrorMessage name="yearsOfExperience" /></p>
             </div>
             
             <div>
-              <p>Gender</p>
+              <p  style={{fontSize: "13px"}}>Gender</p>
               <Select options={genders} name="gender" />
               <p className="error"><ErrorMessage name="gender" /></p>
             </div>
 
             <div>
-              <p>Primary Skill</p>
+              <p  style={{fontSize: "13px"}}>Primary Skill</p>
               <Select options={primarySkills} name="primarySkill" />
               <p className="error"><ErrorMessage name="primarySkill" /></p>
             </div>
 
             <div>
-              <p>English Proficiency</p>
+              <p  style={{fontSize: "13px"}}>English Proficiency</p>
               <Select options={englishProficiency} name="englishProficiency" />
               <p className="error"><ErrorMessage name="englishProficiency" /></p>
             </div>
 
             <div>
-              <p>Years of Experience With Primary Skill</p>
+              <p  style={{fontSize: "13px"}}>Years of Experience With Primary Skill</p>
               <Select options={yearsOfPrimarySkill} name="yearsOfPrimarySkill" />
               <p className="error"><ErrorMessage name="yearsOfPrimarySkill" /></p>
             </div>
@@ -137,7 +137,7 @@ const StepTwo = (props) => {
           <div className="grid sm:grid-cols-2 grid-cols-1 gap-7 mb-4">
             <div>
               <div>
-                <p>CV/Resume</p>
+                <p  style={{fontSize: "13px"}}>CV/Resume</p>
                 <input type="file" name="resume" hidden={true} ref={refParam => inputRef = refParam} />
                 <div onClick={() => inputRef.click()} className="h-8 bg-grey-light px-2 py-1 h-10">
                 </div>
@@ -146,7 +146,7 @@ const StepTwo = (props) => {
 
 
             <div>
-              <p>Industry Experience (eg. Fintech)</p>
+              <p  style={{fontSize: "13px"}}>Industry Experience (eg. Fintech)</p>
               <Select isMulti options={industry} name="industry" />
               <p className="error"><ErrorMessage name="industry" /></p>
             </div>
@@ -162,7 +162,7 @@ const StepTwo = (props) => {
             </div>
 
             <div>
-              <p>Communication Channel (eg. Slack)</p>
+              <p  style={{fontSize: "13px"}}>Communication Channel (eg. Slack)</p>
               <Select isMulti options={communicationChannel} name="communicationChannel" />
               <p className="error"><ErrorMessage name="communicationChannel" /></p>
             </div>

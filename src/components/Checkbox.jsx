@@ -5,8 +5,8 @@ const Checkbox = ({ children, ...props }) => {
   const [field, meta] = useField({ ...props, type: 'checkbox' });
   return (
     <div>
-      <label className="checkbox-input">
-        <input className='ml-3' type="checkbox" {...field} {...props} />
+      <label style={{fontSize: "13px"}} className="checkbox-input">
+        <input type="checkbox" {...field} {...props} />
         {children}
       </label>
       {meta.touched && meta.error ? (
