@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form, useField } from 'formik';
+import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import EmailVerification from './EmailVerification';
 import TextInput from './TextInput';
@@ -7,8 +7,6 @@ import Checkbox from './Checkbox';
 import Select from './Select';
 
 
-
-// And now we can use these
 const SignupForm = () => {
   const [emailModal, setEmailModal] = React.useState(false);
 

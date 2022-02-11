@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import SignupStepperForm from "../components/SignupStepperForm"
 
 const CompleteForm = () => {
