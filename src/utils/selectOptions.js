@@ -14,14 +14,14 @@ export const communicationChannel = [
 export const genders = [
   { value: 'male', label: 'Male' },
   { value: 'female', label: 'Female' },
-  { value: 'prefer-not-to-say', label: 'Prefer Not to say' }
+  { value: 'none', label: 'Prefer Not to say' }
 ]
 
 export const yearsOfExperiences = [
-  { value: '1-2', label: '1 - 2' },
-  { value: '3-5', label: '3 - 5' },
-  { value: '6-10', label: '6 - 10' },
-  { value: '11-15', label: '11 - 15' }
+  { value: '1_2', label: '1 - 2' },
+  { value: '3_5', label: '3 - 5' },
+  { value: '6_10', label: '6 - 10' },
+  { value: '11_15', label: '11 - 15' }
 ]
 
 export const primarySkills = [
@@ -38,8 +38,8 @@ export const englishProficiency = [
 ]
 
 export const yearsOfPrimarySkill = [
-  { value: '1-2', label: '1 - 2' },
-  { value: '3-5', label: '3 - 5' },
-  { value: '6-10', label: '6 - 10' },
-  { value: '11-15', label: '11 - 15' }
+  { value: '1_2', label: '1 - 2' },
+  { value: '3_5', label: '3 - 5' },
+  { value: '6_10', label: '6 - 10' },
+  { value: '11_15', label: '11 - 15' }
 ]

@@ -5,13 +5,13 @@ export const stepOneValidationSchema = Yup.object({
     .required('Phone Number is Required'),
   gender: Yup.string()
     .oneOf(
-      ['male', 'female', 'prefer-not-to-say'],
+      ['male', 'female', 'none'],
       'Invalid Gender'
     )
     .required('Gender is required'),
   yearsOfExperience: Yup.string()
     .oneOf(
-      ['1-2', '3-5', '6-10', '11-15'],
+      ['1_2', '3_5', '6_10', '11_15'],
       'Invalid Years Of Experience'
     )
     .required('Years Of Experience is required'),
@@ -29,7 +29,7 @@ export const stepOneValidationSchema = Yup.object({
     .required('English Proficiency is required'),
   yearsOfPrimarySkill: Yup.string()
     .oneOf(
-      ['1-2', '3-5', '6-10', '11-15'],
+      ['1_2', '3_5', '6_10', '11_15'],
       'Invalid Years Of Primary Skill'
     )
     .required('Years Of Primary Skill is required'),

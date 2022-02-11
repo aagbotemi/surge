@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Formik, Form, ErrorMessage } from 'formik';
-import * as Yup from 'yup';
 import TextInput from './TextInput';
+import { stepOneValidationSchema, stepTwoValidationSchema } from '../utils/validationSchema'
 import Select from 'react-select'
-import { stepOneValidationSchema, stepTwoValidationSchema } from '../../utils/validationSchema';
-import { communicationChannel, englishProficiency, genders, industry, primarySkills, yearsOfExperiences, yearsOfPrimarySkill } from '../../utils/selectOptions';
+import { communicationChannel, englishProficiency, genders, industry, primarySkills, yearsOfExperiences, yearsOfPrimarySkill } from '../utils/selectOptions';
 
 export default function SignupStepperForm() {
   const [data, setData] = useState({
@@ -55,8 +54,6 @@ export default function SignupStepperForm() {
   return <div className="md:mx-16 sm:mx-10 mx-7 mt-14 text-brown-light">{steps[currentStep]}</div>;
 }
 
-
-
 const StepOne = (props) => {
   const handleSubmit = (values) => {
     props.next(values);
@@ -69,7 +66,7 @@ const StepOne = (props) => {
       onSubmit={handleSubmit}
     >
       {() => (
-        <Form>
+        <Form onSubmit={handleSubmit}>
           <div className="grid sm:grid-cols-2 grid-cols-1 gap-7 mb-4">
             <div>
               <TextInput
@@ -86,7 +83,6 @@ const StepOne = (props) => {
               <p className="error"><ErrorMessage name="yearsOfExperience" /></p>
             </div>
             
-
             <div>
               <p>Gender</p>
               <Select options={genders} name="gender" />
